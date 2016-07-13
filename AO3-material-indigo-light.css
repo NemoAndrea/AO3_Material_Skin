@@ -4,7 +4,7 @@
 }
 
 /*
-theme colour: #F48FB1 (material design pink:200)
+theme colour: #3F51B5 (material design indigo:500)
 use a find-and-replace function to change this colour in the document to what you like if you wish to make a custom version
 
 Created on 13-07-2016
@@ -43,7 +43,7 @@ Created on 13-07-2016
 
 /*sets header colour to theme colour and adds shadow*/
 #header{
-    background: #F48FB1;
+    background: #3F51B5;
     box-shadow: 0 0.3em 0.8em gray;
     z-index: 10000;
 }
@@ -51,13 +51,13 @@ Created on 13-07-2016
 
 /*changes colours of many elements from the default red*/ /*this should be properly sorted - this is a remnant of earlier work*/
 .actions a:hover, .actions input:hover, .actions a:focus, .actions input:focus, label.action:hover, .action:hover,.action:focus, .delete a, span.delete,span.unread, .replied, span.claimed, .actions span.defaulted,.draggable, .droppable, span.requested,.required, .error, .splash .favorite li:nth-of-type(odd) a:hover, .splash .favorite li:nth-of-type(odd) a:focus , .nominations .rejected,a.cloud8,a.work,.splash .module h3,.splash .browse li a:before    {
-    color: #F48FB1;
+    color: #3F51B5;
 }
 
 /*this changes the colour of the hover action of links*/
 a.tag:hover, .listbox .heading a.tag:visited:hover {
     background:  none;
-    color : #F48FB1;
+    color : #3F51B5;
     border-bottom: none;
 }
 
@@ -66,15 +66,15 @@ a.tag {
     border-bottom: 1px solid #ccc;
 }
 
- /*changes the titles and such*/
+/*changes the titles and such*/
 .blurb h4 a:link, .blurb h4 img{
-    color: #F48FB1;
+    color: #3F51B5;
     border-bottom: none;
 }
 
 /*hover appearance of titles and such*/
 .blurb h4 a:hover{
-    color: #F48FB1;
+    color: #3F51B5;
     border-bottom: none;
     background: #dddddd;
 }
@@ -101,12 +101,12 @@ a.tag {
 
 /*styles elements within the folded out menus in header (hovering only)*/
 #header .menu li:hover,#header #greeting .menu a:hover{
-   border-bottom: solid 0.1em #ffffff;
+    border-bottom: solid 0.1em #ffffff;
 }
 
 /*styles elements within the folded out menus in header (selected tab)*/
 #header .menu li:hover,#header #greeting .menu a:hover{
-    color: #F48FB1
+    color: #3F51B5
 }
 
 /*Changes personal dashboard styling*/
@@ -123,14 +123,14 @@ div.bookmark.listbox.group > ol{
 
 /*menu left text colour on personal pages*/
 #dashboard a:hover{
-    color:  #F48FB1;
+    color:  #3F51B5;
 }
 
 /*menu left current selector*/
 #dashboard .current{
-    border-bottom: 0.1em solid #F48FB1 ;
+    border-bottom: 0.1em solid #3F51B5 ;
     border-radius: 0;
-    color: #F48FB1;
+    color: #3F51B5;
     background: transparent;
 }
 
@@ -139,7 +139,7 @@ div.bookmark.listbox.group > ol{
 }
 
 #header .user .current{
-    color: #F48FB1;
+    color: #3F51B5;
 }
 
 /*changes container for work,bookmarks and collections and personal collections*/
@@ -161,13 +161,13 @@ ol.work.index.group > li,ol.bookmark.index.group > li,ul.collection.picture.inde
 }
 
 #header .dropdown .menu li a:hover {
-    color:#F48FB1;
+    color:#3F51B5;
 }
 
 /*related to admin-notification banner*/
 #admin-banner{
-     padding-top: 2em;
- }
+    padding-top: 2em;
+}
 
 #admin-banner{
     background: #fafafa;
@@ -179,7 +179,7 @@ ol.work.index.group > li,ol.bookmark.index.group > li,ul.collection.picture.inde
     box-shadow: 0 0.2em 0.6em gray ;
 }
 
- /*footer related customisation*/
+/*footer related customisation*/
 #footer{
     background: #424242;
 }
@@ -240,7 +240,7 @@ ol.pagination.actions li span,ol.pagination.actions li a,ol.pagination.actions l
 #header #search input.button:hover{
     background: #fafafa;
     border: 1px solid white;
-    color: #F48FB1;
+    color: #3F51B5;
 }
 
 /*more buttons*/
@@ -251,8 +251,8 @@ ul.navigation.actions input,ul.navigation.actions input:visited{
 }
 
 ul.navigation.actions input:hover{
-    color: #F48FB1;
-    border: 1px solid #F48FB1;
+    color: #3F51B5;
+    border: 1px solid #3F51B5;
     background: transparent;
     box-shadow: none;
 }
@@ -265,8 +265,8 @@ ul.navigation.actions a,ul.navigation.actions a:visited{
 }
 
 ul.navigation.actions a:hover{
-    color: #F48FB1;
-    border: 1px solid #F48FB1;
+    color: #3F51B5;
+    border: 1px solid #3F51B5;
     background: transparent;
     box-shadow: none;
 }
@@ -279,8 +279,8 @@ ul.actions a.actions,ul.actions input,ul.actions a.actions:visited,ul.actions a:
 }
 
 ul.actions a.actions:hover,ul.actions input:hover,ul.actions a:first-child:hover,ul.media.fandom.index.group p.actions a:hover{
-    color: #F48FB1;
-    border: 1px solid #F48FB1;
+    color: #3F51B5;
+    border: 1px solid #3F51B5;
     background: transparent;
     box-shadow: none;
 }
@@ -294,8 +294,8 @@ ul.actions a.actions:hover,ul.actions input:hover,ul.actions a:first-child:hover
 }
 
 .actions input:hover, .submit input:hover{
-    color: #F48FB1;
-    border: 1px solid #F48FB1;
+    color: #3F51B5;
+    border: 1px solid #3F51B5;
     background: transparent;
     box-shadow: none;
 }
@@ -370,14 +370,14 @@ ol.index.group > li{
 
 /*tag search fixes*/
 dd input,dd input:valid{
-    color: #F48FB1 ;
-    border-bottom: 0.1em solid #F48FB1 ;
+    color: #3F51B5 ;
+    border-bottom: 0.1em solid #3F51B5 ;
     border-radius: 0;
 }
 
 dd input:focus{
-    color: #F48FB1 ;
-    border-bottom: 0.1em solid #F48FB1 ;
+    color: #3F51B5 ;
+    border-bottom: 0.1em solid #3F51B5 ;
     border-radius: 0;
 }
 
