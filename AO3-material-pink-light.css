@@ -1,0 +1,379 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto';
+*{
+    font-family: 'Roboto', sans-serif !important;
+}
+/*theme colour: #F48FB1 (material design pink:200)
+use a find-and-replace function to change this colour in the document to what you like*/
+
+#header {
+    min-height: 0;
+    margin-bottom: 0;
+}
+
+#main,
+#dashboard {
+    padding-top: 2em;
+}
+
+/*Site title colour*/
+#header .heading a {
+    color: #ffffff;
+}
+
+/*Site  user info colour*/
+#header #greeting a {
+    color: #ffffff;
+    font-size: 110%;
+}
+
+
+/*changes the main coloured bar in the top menu*/
+#header .primary {
+    background: transparent;
+    width: 100%;
+    height: 2em;
+    box-shadow: none;
+    font-size: 100%;
+}
+
+/*sets header colour to theme colour and adds shadow*/
+#header{
+    background: #F48FB1;
+    box-shadow: 0 0.3em 0.8em gray;
+    z-index: 10000;
+}
+
+
+/*changes colours of many elements from the default red*/ /*this should be properly sorted - this is a remnant of earlier work*/
+.actions a:hover, .actions input:hover, .actions a:focus, .actions input:focus, label.action:hover, .action:hover,.action:focus, .delete a, span.delete,span.unread, .replied, span.claimed, .actions span.defaulted,.draggable, .droppable, span.requested,.required, .error, .splash .favorite li:nth-of-type(odd) a:hover, .splash .favorite li:nth-of-type(odd) a:focus , .nominations .rejected,a.cloud8,a.work,.splash .module h3,.splash .browse li a:before    {
+    color: #F48FB1;
+}
+
+/*this changes the colour of the hover action of links*/
+a.tag:hover, .listbox .heading a.tag:visited:hover {
+    background:  none;
+    color : #F48FB1;
+    border-bottom: none;
+}
+
+/*changes appearance of links not selected*/
+a.tag {
+    border-bottom: 1px solid #ccc;
+}
+
+ /*changes the titles and such*/
+.blurb h4 a:link, .blurb h4 img{
+    color: #F48FB1;
+    border-bottom: none;
+}
+
+/*hover appearance of titles and such*/
+.blurb h4 a:hover{
+    color: #F48FB1;
+    border-bottom: none;
+    background: #dddddd;
+}
+
+/*tracks header font colour*/
+#header ul.primary a {
+    color: #fafafa;
+}
+
+/*keeps the primary menu boxes styled*/
+#header .menu {
+    background: #ffffff;
+    box-shadow: 0 0.2em 0.8em gray;
+    width: 25em;
+    border: none;
+}
+
+/*styles elements within the folded out menus in header*/
+#header .menu li,#header #greeting .menu a{
+    border: none;
+    padding-bottom: 0.2em;
+    color: #333333;
+}
+
+/*styles elements within the folded out menus in header (hovering only)*/
+#header .menu li:hover,#header #greeting .menu a:hover{
+   border-bottom: solid 0.1em #ffffff;
+}
+
+/*styles elements within the folded out menus in header (selected tab)*/
+#header .menu li:hover,#header #greeting .menu a:hover{
+    color: #F48FB1
+}
+
+/*Changes personal dashboard styling*/
+div.bookmark.listbox.group{
+    background: transparent;
+    border: none;
+}
+
+div.bookmark.listbox.group > ol{
+    background: transparent;
+    border: none;
+}
+
+
+/*menu left text colour on personal pages*/
+#dashboard a:hover{
+    color:  #F48FB1;
+}
+
+/*menu left current selector*/
+#dashboard .current{
+    border-bottom: 0.1em solid #F48FB1 ;
+    border-radius: 0;
+    color: #F48FB1;
+    background: transparent;
+}
+
+#dashboard.own{
+    border: none;
+}
+
+#header .user .current{
+    color: #F48FB1;
+}
+
+/*changes container for work,bookmarks and collections and personal collections*/
+ol.work.index.group > li,ol.bookmark.index.group > li,ul.collection.picture.index.group > li, div.bookmark.listbox.group > ol > li,div.user.home.profile{
+    background: #ffffff;
+    border: none;
+    box-shadow: 0 0.4em 0.6em gray;
+    margin-top: 1.5em;
+}
+
+#header .search .actions {
+    border-bottom: none;
+    font-size: 1em;
+}
+
+#header .dropdown .menu li a {
+    padding: 0;
+    margin-left: 0;
+}
+
+#header .dropdown .menu li a:hover {
+    color:#F48FB1;
+}
+
+/*related to admin-notification banner*/
+#admin-banner{
+     padding-top: 2em;
+ }
+
+#admin-banner{
+    background: #fafafa;
+}
+
+#admin-banner .userstuff{
+    background-color: #ffffff;
+    border: none;
+    box-shadow: 0 0.2em 0.6em gray ;
+}
+
+ /*footer related customisation*/
+#footer{
+    background: #424242;
+}
+
+#footer .module .heading{
+    color: #fafafa ;
+}
+
+#footer .module .menu li{
+    color: #bbbbbb;
+}
+
+#footer .module .menu a{
+    color: #bbbbbb;
+    border-bottom: none;
+}
+
+#inner{
+    background: #fafafa;
+}
+
+/*changes side search thing*/
+fieldset{
+    background: #ffffff;
+    box-shadow: 0 0.4em 0.6em gray;;
+    margin-top: 1em;
+    z-index: 900;
+}
+
+/*changes some subsection of the search thing*/
+dd.submit.actions input{
+    background-image: none;
+    background-color: #ffffff;
+    box-shadow:  0 0.2em 0.8em gray;
+    border: none;
+    z-index: 1000;
+}
+
+/*Page indicator styling*/
+ol.pagination.actions li span,ol.pagination.actions li a,ol.pagination.actions li{
+    background: transparent;
+    border-radius: 0;
+    border: none;
+    box-shadow: none;
+}
+
+/*text input box button*/
+#header #search input.button  {
+    background: transparent;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+}
+#header #search .text{
+    margin: none;
+}
+
+
+#header #search input.button:hover{
+    background: #fafafa;
+    border: 1px solid white;
+    color: #F48FB1;
+}
+
+/*more buttons*/
+ul.navigation.actions input,ul.navigation.actions input:visited{
+    color: #333333;
+    border: 1px solid #333333;
+    background: transparent;
+}
+
+ul.navigation.actions input:hover{
+    color: #F48FB1;
+    border: 1px solid #F48FB1;
+    background: transparent;
+    box-shadow: none;
+}
+
+/*navigation buttons*/
+ul.navigation.actions a,ul.navigation.actions a:visited{
+    color: #333333;
+    border: 1px solid #333333;
+    background: transparent;
+}
+
+ul.navigation.actions a:hover{
+    color: #F48FB1;
+    border: 1px solid #F48FB1;
+    background: transparent;
+    box-shadow: none;
+}
+
+/*changing action buttons*/
+ul.actions a.actions,ul.actions input,ul.actions a.actions:visited,ul.actions a:first-child,ul.actions a:first-child:visited,ul.media.fandom.index.group p.actions a, ul.media.fandom.index.group p.actions:visited a{
+    color: #333333;
+    border: 1px solid #333333;
+    background: transparent;
+}
+
+ul.actions a.actions:hover,ul.actions input:hover,ul.actions a:first-child:hover,ul.media.fandom.index.group p.actions a:hover{
+    color: #F48FB1;
+    border: 1px solid #F48FB1;
+    background: transparent;
+    box-shadow: none;
+}
+
+/*changing settings buttons in menus*/
+.actions input, .submit input,.actions input:valid, .submit input:valid{
+    color: #333333;
+    border: 1px solid #333333;
+    background: transparent;
+    box-shadow: none;
+}
+
+.actions input:hover, .submit input:hover{
+    color: #F48FB1;
+    border: 1px solid #F48FB1;
+    background: transparent;
+    box-shadow: none;
+}
+
+/*bookmarked by styling*/
+div.user.module.group{
+    border: none;
+    border-top: 1px solid grey ;
+}
+
+div.user.module.group p{
+    margin-top: .643em;
+}
+
+/*fandoms tab formatting*/
+ol.alphabet.fandom.index.group > li,ul.media.fandom.index.group > li{
+    background: #ffffff;
+    border: none;
+    box-shadow: 0 0.2em 0.8em gray;
+}
+
+/*title of each fandom subsection*/
+ul.media.fandom.index.group li h3.heading a{
+    border: none;
+}
+
+ol.alphabet.fandom.index.group li > ul,ul.media.fandom.index.group li > ul{
+    background: #ffffff;
+    border-top: 1px solid grey;
+    box-shadow: none;
+}
+
+ol.index.group{
+    background: transparent;
+    box-shadow: none;
+    border-top: 1px solid grey;
+}
+
+ol.index.group > li{
+    background: transparent;
+    box-shadow: none;
+}
+/*action header*/ /*fox*/
+#header ul.primary.navigation.actions{
+    height: 2.4em;
+}
+/*text input box header*/
+#header #search input.text{
+    outline: none;
+    background: transparent;
+    color: #ffffff;
+    border-radius: 0;
+    width: 200px;
+    border-bottom: solid 0.1em #ffffff;
+
+}
+
+#header #search input.text:hover{
+    background: transparent;
+    outline: none;
+    box-shadow: none;
+    border-bottom: solid 0.1em #ffffff;
+}
+
+#header #search input.text:focus, input:valid {
+    box-shadow: none;
+    outline: none;
+    border: none;
+    border-bottom: solid 0.1em #ffffff;
+    color: #ffffff;
+}
+
+/*tag search fixes*/
+dd input,dd input:valid{
+    color: #F48FB1 ;
+    border-bottom: 0.1em solid #F48FB1 ;
+    border-radius: 0;
+}
+
+dd input:focus{
+    color: #F48FB1 ;
+    border-bottom: 0.1em solid #F48FB1 ;
+    border-radius: 0;
+}
+
+
